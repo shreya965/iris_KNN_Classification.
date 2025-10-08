@@ -1,6 +1,6 @@
 # iris_KNN_Classification.
 KNN Classification_PCA.
-Project Description
+## Project Description
 
 This project uses the Iris dataset to train a K-Nearest Neighbors (KNN) classifier to predict the species of Iris flowers. The dataset has four features: SepalLengthCm, SepalWidthCm, PetalLengthCm, and PetalWidthCm, which are used to classify the species of Iris flowers into three categories:
 
@@ -12,7 +12,7 @@ Iris-virginica
 
 The features are first normalized and then reduced to 2D using Principal Component Analysis (PCA) for visualization purposes. The classifier is evaluated by plotting the decision boundaries and showing how the KNN model classifies different regions in the PCA-reduced space.
 
-Requirements
+## Requirements
 
 To run this project, you'll need the following Python libraries:
 
@@ -29,7 +29,7 @@ pandas
 You can install these libraries using pip:
 pip install numpy matplotlib seaborn scikit-learn pandas
 
-Dataset
+## Dataset
 
 The Iris dataset is a well-known dataset for machine learning tasks, available through scikit-learn or from sources like Kaggle.
 
@@ -37,7 +37,7 @@ Features: Sepal Length, Sepal Width, Petal Length, Petal Width
 
 Target: Species of Iris flower (Setosa, Versicolor, Virginica)
 
-Steps to Run the Code
+## Steps to Run the Code
 1. Load the Data
 
 The Iris dataset is loaded into a Pandas DataFrame. If using a CSV file, simply replace the dataset loading part with:
@@ -83,7 +83,7 @@ from sklearn.metrics import accuracy_score
 y_pred = knn.predict(X_test_pca)
 print(f'Accuracy: {accuracy_score(y_test, y_pred):.2f}')
 
-Example Output
+## Example Output
 
 After running the code, you will see a decision boundary plot with the Iris dataset in the PCA-reduced 2D space. The plot will show:
 
@@ -91,7 +91,7 @@ Colored decision regions based on the KNN classifier's predictions.
 
 Scatter points representing the training samples, color-coded by their true class.
 
-Conclusion
+## Conclusion
 
 This project demonstrates how to apply Principal Component Analysis (PCA) for dimensionality reduction and K-Nearest Neighbors (KNN) for classification on the Iris dataset. The decision boundary visualization helps in understanding how the classifier makes decisions and shows the separation between different classes.
 
